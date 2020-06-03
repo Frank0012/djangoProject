@@ -1,0 +1,48 @@
+{% load static %}
+<doctype! html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>
+		{% block title %}
+		{{ page_title|default:"Untitled Page" }}
+		{% endblock title %}
+		</title>
+		<link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+	</head>
+	
+	<div id="big_header">{%block header%} {{page_title | default:"Untitled Page"}} {%endblock header%}</div>
+	
+	<div id="parallax"></div>
+	<body>
+	
+	<div id="wrapper">
+	
+         <header id="header">
+		 
+             <div id="top_menu"><a href="/about">About</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/blog">Blog</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/CV">CV</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/projects">Projects</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/contact">Contact</a> 
+			 
+			 </div>
+         
+         <img src="{% static 'me2.jpg' %}" alt="A picture of me"/>
+         <section id="main">
+		   
+		{% block content %}
+		
+		<p>
+		Placeholder text in base template. Replace with page content.
+		</p>
+		{% endblock content %}
+		
+		</section> </header> 
+         <footer id="footer">Copyright &copy;
+             <script type="text/JavaScript">
+                 document.write(new Date().getFullYear());                    
+             </script> FrankCrossley
+         </footer>
+      </div>
+	</body>
+	<div id="parallax"></div>
+	
+</html>

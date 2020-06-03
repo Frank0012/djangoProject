@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{title}}{% endblock title %}
+
+{%block header%} {{title}} {%endblock header%}
+
+
+{% block content %}
+<header1>Completed projects</header1>
+<h1>Matrix Manipulator</h1>
+<p>
+	A set of programs for matrix manipulation. There are three classes: MatrixInverter, MatrixMultiplier and SimultaneousEquationSolver. MatrixInverter can invert any real invertible matrix. MatrixMultiplier can multiply any multipliable real matrices. SimultaneousEquationSolver uses matrices to solve simultaneous equations where the number of unknowns is equal to the number of equations.
+</p>
+
+<header1>Current projects</header1>
+<h1>Sudoku Solver</h1>
+<p>
+	So far capable of solving an 'easy' sudoku where the only method needed is 'sole candidate'.
+</p>
+
+{% endblock content %}
