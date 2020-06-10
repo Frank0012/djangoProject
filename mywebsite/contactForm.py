@@ -16,13 +16,13 @@ def contact(request):
         if form.is_valid():
             cd = form.cleaned_data
             #assert False
-            con = get_connection('django.core.mail.backends.console.EmailBackend')
+            #con = get_connection('django.core.mail.backends.console.EmailBackend')
             send_mail(
                 cd['subject'],
-                cd['message'],
+                cd['message']+ ' FROM ' + cd['email'],
                 cd.get('email', 'noreply@example.com'),
-                ['frank0012@live.com'],
-                connection=con
+                ['fcrossley95@gmail.com'],
+               # connection=con
                 )
             return HttpResponseRedirect('/contact?submitted=True')
     else:

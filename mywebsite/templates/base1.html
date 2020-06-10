@@ -21,11 +21,20 @@
 	
          <header id="header">
 		 
-             <div id="top_menu"><a href="/about">About</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/blog">Blog</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/CV">CV</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/projects">Projects</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/contact">Contact</a> 
+		 <a href="https://github.com/Frank0012">
+		 <img src="{% static 'gitHubLogo.png' %}" alt="GitHub" style="width:75px;height:75px;margin-left:10px;margin-top:10px"/>
+		 </a> 
+		 &nbsp;&nbsp;&nbsp;&nbsp; 
+		 <a href="https://www.linkedin.com/in/frank-crossley-3501761ab/">
+		 <img src="{% static 'linkdin.png' %}" alt="Linkedin" style="width:50px;height:50px;margin-left:10px;margin-top:10px"/>
+		 </a>
+		 
+             <div id="top_menu"><a href="/about">About</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/blog">Blog</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/CV">CV</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/projects">Projects</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/contact">Contact</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+			 
 			 
 			 </div>
          
-         <img src="{% static 'me2.jpg' %}" alt="A picture of me"/>
+         <img src="{% static 'me2.jpg' %}" alt="A picture of me" id = "img"/>
          <section id="main">
 		   
 		{% block content %}

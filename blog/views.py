@@ -4,6 +4,10 @@ from django.utils import timezone
 from . models import Post
 
 
+#def index(request):
+#    title = "Frank Crossley"
+#    return render(request, 'index/index.html', {'title':title})
+
 def about(request):
     title = "About"
     return render(request, 'about/about.html', {'title':title})
