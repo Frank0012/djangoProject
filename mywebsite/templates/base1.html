@@ -11,24 +11,26 @@
 		</title>
 		<link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
 	</head>
+	<!--
 	
-	<div id="big_header">{%block header%} {{page_title | default:"Untitled Page"}} {%endblock header%}</div>
 	
 	<div id="parallax"></div>
+	-->
 	<body>
 	
 	<div id="wrapper">
-	
+		
          <header id="header">
 		 
+		 
 		 <a href="https://github.com/Frank0012">
-		 <img src="{% static 'gitHubLogo.png' %}" alt="GitHub" style="width:75px;height:75px;margin-left:10px;margin-top:10px"/>
+		 <img src="{% static 'gitHubLogo.png' %}" alt="GitHub" style="width:50px;height:50px;margin-left:10px;margin-top:10px"/>
 		 </a> 
 		 &nbsp;&nbsp;&nbsp;&nbsp; 
 		 <a href="https://www.linkedin.com/in/frank-crossley-3501761ab/">
 		 <img src="{% static 'linkdin.png' %}" alt="Linkedin" style="width:50px;height:50px;margin-left:10px;margin-top:10px"/>
 		 </a>
-		 
+		 <div id="big_header">{%block header%} {{page_title | default:"Untitled Page"}} {%endblock header%}</div>
              <div id="top_menu"><a href="/about">About</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/blog">Blog</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/CV">CV</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/projects">Projects</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/contact">Contact</a> &nbsp;&nbsp;&nbsp;&nbsp; 
 			 
 			 
@@ -52,6 +54,6 @@
          </footer>
       </div>
 	</body>
-	<div id="parallax"></div>
+	<!--<div id="parallax"></div>-->
 	
 </html>
